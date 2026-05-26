@@ -1,0 +1,41 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Research tooling and local AI systems banner</title>
+  <desc id="desc">A clean technical banner showing a research workflow from papers to automation.</desc>
+  <rect width="1200" height="360" rx="24" fill="#0F172A"/>
+  <rect x="0" y="0" width="1200" height="360" rx="24" fill="url(#grid)" opacity="0.34"/>
+  <circle cx="1010" cy="90" r="170" fill="#2F6F6F" opacity="0.34"/>
+  <circle cx="210" cy="315" r="190" fill="#44A833" opacity="0.18"/>
+  <path d="M95 241C205 150 306 141 428 190C550 239 621 245 731 165C838 88 947 99 1097 171" stroke="#94A3B8" stroke-width="2" stroke-dasharray="8 12" opacity="0.45"/>
+
+  <g transform="translate(80 68)">
+    <text x="0" y="0" fill="#E5E7EB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="3">LOCAL RESEARCH SYSTEMS</text>
+    <text x="0" y="62" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="54" font-weight="800">Rui's AI Workbench</text>
+    <text x="0" y="106" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22">papers -> notes -> code -> automation -> reusable tools</text>
+  </g>
+
+  <g transform="translate(82 228)">
+    <rect x="0" y="0" width="175" height="46" rx="12" fill="#111827" stroke="#334155"/>
+    <text x="22" y="30" fill="#E5E7EB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">ResearchFlow</text>
+    <rect x="197" y="0" width="142" height="46" rx="12" fill="#111827" stroke="#334155"/>
+    <text x="219" y="30" fill="#E5E7EB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">Codex Skills</text>
+    <rect x="361" y="0" width="130" height="46" rx="12" fill="#111827" stroke="#334155"/>
+    <text x="383" y="30" fill="#E5E7EB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">Anaconda</text>
+    <rect x="513" y="0" width="110" height="46" rx="12" fill="#111827" stroke="#334155"/>
+    <text x="535" y="30" fill="#E5E7EB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">yt-dlp</text>
+  </g>
+
+  <g transform="translate(795 72)">
+    <rect x="0" y="0" width="320" height="212" rx="18" fill="#020617" opacity="0.72" stroke="#334155"/>
+    <text x="28" y="42" fill="#93C5FD" font-family="Consolas, monospace" font-size="17">~/workflow</text>
+    <text x="28" y="82" fill="#E5E7EB" font-family="Consolas, monospace" font-size="17">$ collect papers</text>
+    <text x="28" y="112" fill="#E5E7EB" font-family="Consolas, monospace" font-size="17">$ build index</text>
+    <text x="28" y="142" fill="#E5E7EB" font-family="Consolas, monospace" font-size="17">$ query knowledge</text>
+    <text x="28" y="172" fill="#86EFAC" font-family="Consolas, monospace" font-size="17">-> ship useful tools</text>
+  </g>
+
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#CBD5E1" stroke-width="1"/>
+    </pattern>
+  </defs>
+</svg>

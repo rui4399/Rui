@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="./assets/profile-banner.svg" alt="Research tooling and local AI systems banner" width="100%" />
+
 # rui13181593055
 
 **Research tooling, local AI systems, and practical automation.**
@@ -9,36 +11,42 @@ I build small but serious tools that turn scattered ideas, papers, code, and med
 [![ResearchFlow](https://img.shields.io/badge/ResearchFlow-local%20research%20OS-2f6f6f?style=for-the-badge)](https://github.com/RipeMangoBox/ResearchFlow)
 [![Codex](https://img.shields.io/badge/Codex-workflow%20automation-111827?style=for-the-badge)](#)
 [![Python](https://img.shields.io/badge/Python-Anaconda-44a833?style=for-the-badge&logo=anaconda&logoColor=white)](#)
+[![Zotero](https://img.shields.io/badge/Zotero-research%20library-CC2936?style=for-the-badge&logo=zotero&logoColor=white)](#)
 
 </div>
 
 ---
 
-## What I Am Building
+## Focus
 
 I am interested in systems that help a person think, research, write, and ship faster without losing their own taste.
 
-- **ResearchFlow**: a local-first research workspace for paper collection, indexing, analysis, and knowledge-base querying.
-- **Codex/Hermes workflows**: skills, memory, local automation, and agent routing that make AI tooling feel more like a dependable workbench.
-- **Document and media pipelines**: Zotero, PDF, paper notes, presentations, yt-dlp, and reproducible local environments.
-- **Developer tooling**: small utilities that clean up messy local setups and make projects easier to resume.
+| Area | What I am building |
+| --- | --- |
+| Research systems | Paper collection, metadata audit, local indexing, and knowledge-base queries |
+| Local AI runtime | Codex skills, persistent memory, browser/workspace automation, and project routing |
+| Python environment | Anaconda-first setup, isolated envs, clean caches, and reproducible tooling |
+| Media tooling | yt-dlp source workflow, structured downloads, and metadata pipelines |
 
-## Current Focus
-
-```text
-ResearchFlow        paper retrieval, metadata audit, notes export, knowledge queries
-Local AI runtime    Codex skills, persistent memory, browser/workspace automation
-Python environment  Anaconda-first, isolated envs, clean caches and dependencies
-Media tooling       yt-dlp source workflow, structured download and metadata tools
-```
-
-## Featured Projects
+## Featured Work
 
 | Project | Direction |
 | --- | --- |
 | [ResearchFlow](https://github.com/RipeMangoBox/ResearchFlow) | Local research assistant for papers, notes, indexing, and reusable research skills |
 | yt-dlp local workspace | Source-linked media tooling, installed in an isolated Anaconda environment |
 | Codex skill system | Local skill routing, memory files, and project-specific agent workflows |
+
+## System Map
+
+```text
+papers / web / media
+        |
+        v
+ResearchFlow  ->  indexed notes  ->  knowledge queries
+        |                                |
+        v                                v
+Codex skills  ->  local automation  ->  reusable tools
+```
 
 ## Tooling I Like
 
@@ -58,6 +66,7 @@ Media tooling       yt-dlp source workflow, structured download and metadata too
 - Prefer tools that leave clear files, logs, and checkpoints.
 - Make automation useful before making it fancy.
 - Treat research notes and code as parts of the same thinking system.
+- Keep environments boring, explicit, and recoverable.
 
 ## GitHub Snapshot
 
