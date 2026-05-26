@@ -2,7 +2,7 @@
 
 <img src="./assets/profile-banner.svg" alt="Research tooling and local AI systems banner" width="100%" />
 
-# rui13181593055
+# Rui
 
 **Research tooling, local AI systems, and practical automation.**
 
