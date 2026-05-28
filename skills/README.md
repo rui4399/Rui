@@ -41,6 +41,10 @@ The collection is intentionally not a catalog of generic API wrappers. Each skil
 - `public-skill-distillation`: turn private logs, maintenance records, and agent conversations into public, reusable, sanitized skills.
 - `agent-publication-readiness-review`: review a public GitHub skill library for taxonomy, polish, validation, and sensitive-information exposure.
 
+### Web, Game, And Visual QA
+
+- `web-game-ui-bugfix-playbook`: reproduce and repair browser-game UI, canvas, sprite, animation, viewport, input, and mobile WebView defects.
+
 ### Operating Philosophy
 
 - `evidence-first-local-ops`: debug by ranking logs, process state, probes, config, UI status, and prior assumptions as evidence.

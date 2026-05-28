@@ -379,3 +379,18 @@ Distinctive angle:
 - reviews taxonomy, trigger clarity, distinctiveness, verification, safety, and polish
 - treats public skill collections as systems, not dumps
 - makes validation and sensitive scanning explicit pre-push requirements
+
+## web-game-ui-bugfix-playbook
+
+Inspired by:
+
+- browser-game UI and canvas smoke-test work
+- sprite-sheet, contact-sheet, and generated-asset QA workflows
+- mobile WebView performance and viewport repair passes
+- visual verification habits from local frontend and game debugging
+
+Distinctive angle:
+
+- requires both functional and visible rendering evidence
+- separates build success from canvas, sprite, HUD, input, and mobile wrapper correctness
+- treats screenshots, canvas nonblank checks, sprite dimensions, and frame counts as first-class verification artifacts
