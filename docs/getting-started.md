@@ -11,6 +11,8 @@ Rui Skills is an AI Agent Skill Platform, not a prompt dump. Start by choosing a
 5. Verify the observable completion criteria.
 6. Record reusable results in `evals/` or a sanitized example.
 
+For large codebases, use `codegraph-mcp-code-intelligence` before broad reading. It can build symbol, impact, and task-context views locally, but every edit still needs direct source inspection and normal validation.
+
 ## Current Stable Surface
 
 - `skills/`: installable Codex-compatible skill folders.

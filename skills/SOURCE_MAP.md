@@ -151,6 +151,20 @@ Distinctive angle:
 - requires read-only current-session verification before writes
 - saves pending writes locally when auth is stale
 
+## codegraph-mcp-code-intelligence
+
+Inspired by:
+
+- adding a local CodeGraph MCP server to Codex
+- recurring need to inspect large repositories without loading too much context
+- local-first preference for symbol, caller, callee, impact, and affected-test discovery
+
+Distinctive angle:
+
+- treats CodeGraph as a narrowing tool, not a source of truth
+- requires direct file evidence before edits
+- prevents generated index artifacts and large context dumps from leaking into public commits
+
 ## evidence-first-local-ops
 
 Inspired by:

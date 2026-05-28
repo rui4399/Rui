@@ -16,6 +16,7 @@ compose_skills(["theorem-prover", "latex-polisher"])
 - resolve skill paths
 - read `SKILL.md` only when triggered
 - route tools by declared need
+- prefer CodeGraph context and impact queries for large repositories before broad manual reads
 - pass compact context between workflow steps
 - record failures and recovery attempts
 - emit evaluation reports
@@ -40,3 +41,7 @@ rui eval theorem-prover
 ```
 
 The first implementation should be local-first and file-backed before any hosted service or web UI is added.
+
+## Code Intelligence Hook
+
+When a skill declares `codegraph`, the runtime should first check whether the target repository is indexed. If it is not indexed, it should ask the workflow whether indexing is appropriate for that repository scope, then keep `.codegraph/` out of publication unless the project explicitly tracks it.

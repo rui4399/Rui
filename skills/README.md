@@ -31,6 +31,7 @@ The collection is intentionally not a catalog of generic API wrappers. Each skil
 - `provider-response-shape-probing`: classify provider health by usable JSON/output shape instead of status codes, labels, or generic probes.
 - `local-model-routing-evaluation`: evaluate local router models by task-shaped probes, output shape, fallback behavior, and failure category.
 - `mcp-oauth-session-freshness`: handle OAuth-backed MCP tools when CLI login succeeds but the active desktop session still has stale auth.
+- `codegraph-mcp-code-intelligence`: use CodeGraph CLI or MCP for local symbol search, impact analysis, affected-test discovery, and task-focused context packs.
 - `external-write-draft-fallback`: preserve local drafts and verify remote writes when OAuth, permissions, network, or content rules are uncertain.
 - `codex-plugin-recovery-api-mode`: recover local plugin/skill routing when a Codex-style app is running in API-key mode or the UI does not expose plugins.
 
@@ -65,6 +66,7 @@ Most skills explain a clean happy path. These focus on operational edge cases:
 - a UTF-8 script works in PowerShell 7 but breaks in PowerShell 5.1
 - a gateway state file says running while the PID is dead
 - CLI OAuth succeeds but the active desktop session still cannot use the MCP tool
+- a local code-intelligence index narrows the likely owner but still needs direct source verification
 - a mobile session receives the message but the local agent never emits a final reply
 - a cached image filename says one thing while the file contains a rejected fallback
 

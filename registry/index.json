@@ -133,6 +133,19 @@
       "status": "stable"
     },
     {
+      "name": "codegraph-mcp-code-intelligence",
+      "version": "0.1.0",
+      "author": "Rui Skills",
+      "path": "skills/codegraph-mcp-code-intelligence",
+      "summary": "Use local CodeGraph CLI or MCP for symbol search, impact analysis, affected-test discovery, and task-focused context packs before editing.",
+      "triggers": ["codegraph", "symbol search", "impact analysis", "affected tests"],
+      "tools": ["codegraph", "mcp", "filesystem", "git"],
+      "domain": "code-intelligence",
+      "difficulty": "medium",
+      "tags": ["codegraph", "mcp", "code-intelligence", "repo-triage"],
+      "status": "stable"
+    },
+    {
       "name": "cross-runtime-path-resolution",
       "version": "0.1.0",
       "author": "Rui Skills",

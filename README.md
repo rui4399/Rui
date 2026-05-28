@@ -29,6 +29,7 @@ The target is not a prompt collection. A real Rui Skill should define intent, tr
 | Skills | Turns repeated agent work into reusable procedures | Installable, testable, searchable skill modules |
 | Registry | Records skill metadata, tools, tags, status, and paths | Search, filtering, ranking, and future marketplace support |
 | Runtime | Loads skills and composes workflows | Local execution, tool routing, context handoff, and CLI integration |
+| Code intelligence | Narrows large repositories before edits | CodeGraph MCP/CLI, impact checks, and affected-test discovery |
 | Workflows | Connects multiple skills into pipelines | Math research, paper drafting, game/UI QA, and recovery flows |
 | Evals | Measures whether skills work under pressure | Correctness, token cost, latency, recovery quality, and safety |
 | Recovery runbooks | Captures Windows, WSL, media, and tooling failure modes | Practical repair paths backed by logs and checks |
@@ -40,6 +41,7 @@ The target is not a prompt collection. A real Rui Skill should define intent, tr
 | [Skill library](./skills) | Public agent skills for local runtime reliability, bridge recovery, provider probing, publication hygiene, and operating philosophy |
 | [Registry](./registry/index.json) | Machine-readable index for skill metadata, roadmap placeholders, tool routing, and search |
 | [Runtime notes](./runtime/README.md) | Loader, execution, composition, context, and CLI contract for the future platform |
+| [CodeGraph skill](./skills/codegraph-mcp-code-intelligence) | Local-first code intelligence for repo triage, impact analysis, and context packs |
 | [Workflow docs](./workflows/README.md) | Multi-skill orchestration patterns for math, papers, UI QA, and local recovery |
 | [Evaluation docs](./evals/README.md) | Benchmark shape and metrics for proving skills work |
 | [ResearchFlow](https://github.com/RipeMangoBox/ResearchFlow) | A local research assistant for paper retrieval, notes, indexes, and knowledge queries |
