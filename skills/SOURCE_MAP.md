@@ -46,6 +46,20 @@ Distinctive angle:
 - defines when not to log
 - keeps secrets out of memory by design
 
+## local-capability-harvest
+
+Inspired by:
+
+- scanning local skill roots and plugin caches before improving this repository
+- the need to choose useful public capabilities instead of publishing every installed local skill
+- repeated public-safety passes that remove private paths, account context, and raw logs
+
+Distinctive angle:
+
+- treats local capability discovery as a curation workflow, not a copy operation
+- ranks candidates from metadata before reading full private sources
+- pairs a public skill with a read-only scanner that hides source paths by default
+
 ## codex-plugin-recovery-api-mode
 
 Inspired by:

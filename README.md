@@ -9,8 +9,8 @@
 This repository turns repeated agent work into reusable, testable, composable, and installable capabilities. It is designed for coding agents that need clear triggers, tool routing, recovery plans, evaluation gates, and public-safe operational knowledge.
 
 [![Repository](https://img.shields.io/badge/repo-rui4399%2FRui-111827?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rui4399/Rui)
-[![Capabilities](https://img.shields.io/badge/stable%20capabilities-31-0f766e?style=for-the-badge)](./skills)
-[![Registry](https://img.shields.io/badge/registry-36%20entries-1d4ed8?style=for-the-badge)](./registry/index.json)
+[![Capabilities](https://img.shields.io/badge/stable%20capabilities-32-0f766e?style=for-the-badge)](./skills)
+[![Registry](https://img.shields.io/badge/registry-37%20entries-1d4ed8?style=for-the-badge)](./registry/index.json)
 [![Validation](https://img.shields.io/badge/validation-local%20smoke%20check-7c3aed?style=for-the-badge)](./docs/validation.md)
 
 </div>
@@ -32,7 +32,7 @@ This repository turns repeated agent work into reusable, testable, composable, a
 node tools/validate-skills.mjs
 ```
 
-Current validation target: `36` registry entries, `31` stable capabilities, `5` roadmap capabilities, and `23` domains.
+Current validation target: `37` registry entries, `32` stable capabilities, `5` roadmap capabilities, and `23` domains.
 
 ## What This Is
 
@@ -80,7 +80,7 @@ The repository is the seed of a broader AI Agent Skill Platform: a local-first s
 | Media and bridge QA | `chat-media-delivery-runbook`, `media-artifact-integrity-check` | validating generation, upload, send, and visible delivery |
 | Code intelligence | `codegraph-mcp-code-intelligence` | symbol search, impact analysis, and affected-test discovery |
 | Publication hygiene | `public-skill-distillation`, `agent-publication-readiness-review` | turning private work into safe public artifacts |
-| Authoring and efficiency | `token-frugal-skill-authoring`, `agent-efficiency-audit` | reducing default context, tightening triggers, and validating claims |
+| Authoring and efficiency | `token-frugal-skill-authoring`, `local-capability-harvest`, `agent-efficiency-audit` | reducing default context, tightening triggers, and validating claims |
 | Decision systems | `decision-record-architecture` | keeping rationale, options, status, and supersession traceable |
 | Game and UI QA | `web-game-ui-bugfix-playbook` | reproducing and verifying browser-game visual defects |
 | Operating philosophy | `evidence-first-local-ops`, `state-layered-agent-design` | making agent work auditable and recoverable |
@@ -116,6 +116,7 @@ New capabilities move from local evidence into public artifacts through a small 
 | [skills/](./skills) | Public capabilities distilled from local agent operations and engineering workflows |
 | [registry/index.json](./registry/index.json) | Searchable metadata for tools, tags, difficulty, domains, and status |
 | [tools/validate-skills.mjs](./tools/validate-skills.mjs) | Dependency-free structural validator for the platform |
+| [tools/scan-local-capabilities.mjs](./tools/scan-local-capabilities.mjs) | Read-only local skill/plugin scanner for public-safe capability curation |
 | [templates/skill-template/SKILL.md](./templates/skill-template/SKILL.md) | Authoring template that keeps Codex frontmatter compatible |
 | [workflows/README.md](./workflows/README.md) | Pipeline examples for math, papers, game UI QA, and recovery work |
 | [evals/README.md](./evals/README.md) | Benchmark dimensions for correctness, cost, latency, safety, and recovery |
