@@ -39,6 +39,7 @@ The collection is intentionally not a catalog of generic API wrappers. Each skil
 
 - `local-agent-memory-loop`: maintain explicit local memory files for agent preferences, lessons, active rules, and promotion.
 - `codex-identity-portability`: migrate local Codex identity assets without copying secrets or active account state.
+- `local-capability-harvest`: scan local skills and plugin caches, then curate public-safe repository improvements without dumping private state.
 - `public-skill-distillation`: turn private logs, maintenance records, and agent conversations into public, reusable, sanitized skills.
 - `agent-publication-readiness-review`: review a public GitHub skill library for taxonomy, polish, validation, and sensitive-information exposure.
 - `token-frugal-skill-authoring`: create and revise Codex-compatible skills with compact triggers, progressive disclosure, validation, and low default context cost.

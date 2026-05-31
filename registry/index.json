@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "updated": "2026-05-30",
+  "updated": "2026-06-01",
   "skills": [
     {
       "name": "agent-publication-readiness-review",
@@ -221,6 +221,19 @@
       "domain": "memory",
       "difficulty": "medium",
       "tags": ["memory", "preferences", "learning"],
+      "status": "stable"
+    },
+    {
+      "name": "local-capability-harvest",
+      "version": "0.1.0",
+      "author": "Rui Workbench",
+      "path": "skills/local-capability-harvest",
+      "summary": "Scan local skills and plugin caches to select public-safe repository improvements without bulk-publishing private state.",
+      "triggers": ["scan local skills", "plugin cache harvest", "public-safe capability curation"],
+      "tools": ["filesystem", "node", "ripgrep", "git"],
+      "domain": "skill-authoring",
+      "difficulty": "medium",
+      "tags": ["skills", "plugins", "curation", "sanitization"],
       "status": "stable"
     },
     {

@@ -5,11 +5,13 @@ Skills declare preferred tool classes in `registry/index.json`. The declaration 
 ## Repository Tools
 
 - `validate-skills.mjs`: local smoke validator for registry schema, active skill paths, frontmatter, and public-safety patterns.
+- `scan-local-capabilities.mjs`: read-only scanner for local `SKILL.md` files that ranks public-safe capability candidates without printing source paths by default.
 
 Run it from the repository root:
 
 ```bash
 node tools/validate-skills.mjs
+node tools/scan-local-capabilities.mjs --limit 20
 ```
 
 ## Tool Classes
