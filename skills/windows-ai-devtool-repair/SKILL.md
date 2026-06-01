@@ -35,10 +35,10 @@ For corrupted Conda package caches:
 - avoid deleting the whole base environment first
 - use `PYTHONNOUSERSITE=1` for project environments when user-site packages pollute imports
 
-For pytest failures caused by globally auto-loaded plugins, try:
+For pytest failures caused by globally auto-loaded packages, try:
 
 ```powershell
-$env:PYTEST_DISABLE_PLUGIN_AUTOLOAD = "1"
+$env:PYTEST_DISABLE_tool_AUTOLOAD = "1"
 python -m pytest -q
 ```
 
@@ -77,7 +77,7 @@ Rules:
 When Android or Gradle builds fail under non-ASCII paths:
 
 1. Copy or mirror the project to an ASCII shadow build path.
-2. Use a supported JDK version for the Gradle/Android plugin combination.
+2. Use a supported JDK version for the Gradle/Android toolchain combination.
 3. Set `ANDROID_HOME` and `ANDROID_SDK_ROOT` explicitly.
 4. If dependency TLS fails but SDK tools work, consider a minimal manual build path for small native projects.
 

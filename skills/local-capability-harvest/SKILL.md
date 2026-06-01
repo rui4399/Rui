@@ -1,13 +1,13 @@
 ---
 name: local-capability-harvest
-description: Use when scanning local Codex skills, plugin caches, or agent capability folders to find public-safe improvements for a repository without bulk-publishing private local state.
+description: Use when scanning local Codex skills or agent capability folders to find public-safe improvements for a repository without bulk-publishing private local state.
 ---
 
 # Local Capability Harvest
 
 ## Overview
 
-Use this skill when a local machine has many installed skills or plugin bundles and the repository needs useful improvements, not a raw dump. The goal is to identify reusable patterns, deduplicate overlapping capabilities, sanitize private context, and publish only the parts that stand on their own.
+Use this skill when a local machine has many installed skills or capability folders and the repository needs useful improvements, not a raw dump. The goal is to identify reusable patterns, deduplicate overlapping capabilities, sanitize private context, and publish only the parts that stand on their own.
 
 ## Harvest Targets
 
@@ -27,7 +27,7 @@ Defer or reject candidates when they depend on private identity, private message
 1. Inventory candidate roots with a read-only scanner.
 2. Extract only frontmatter-level metadata and short descriptions first.
 3. Compare candidate names against the repository registry.
-4. Group related capabilities by problem class instead of source plugin.
+4. Group related capabilities by problem class instead of source folder.
 5. Score candidates by reuse value, trigger clarity, validation value, and public-safety risk.
 6. Read the full source only for the top candidates that pass the first screen.
 7. Distill the method into a new or existing public skill.
@@ -55,7 +55,6 @@ Defer or reject candidates when they depend on private identity, private message
 
 - Do not bulk-copy local skill folders into a public repository.
 - Do not publish raw local paths, chat records, credential names, account identifiers, or generated private logs.
-- Do not treat plugin availability as proof that a public skill is useful.
 - Do not stage generated inventories unless they are explicitly sanitized and meant to be public artifacts.
 - Prefer one strong public capability over many thin wrappers.
 
@@ -74,12 +73,11 @@ If validation flags local paths or secrets, remove the copied detail and restate
 Good harvest:
 
 - A local browser-testing skill becomes a public workflow for verifying rendered apps with screenshots and console checks.
-- A plugin recovery incident becomes a public recovery skill for stale OAuth or hidden plugin tools.
 - Several local skill-evaluation scripts become a single repository tool for metadata inventory and duplicate detection.
 
 Bad harvest:
 
-- Copying a whole plugin cache into `skills/`.
+- Copying a whole local capability folder into `skills/`.
 - Publishing a local chat-companion prompt because it has many instructions.
 - Adding a skill that only works with one machine's exact directory layout.
 

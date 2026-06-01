@@ -9,7 +9,6 @@ const DEFAULT_ROOTS = [
   path.join(os.homedir(), ".codex", "skills"),
   path.join(os.homedir(), ".agents", "skills"),
   path.join(os.homedir(), ".codex", "skills", ".system"),
-  path.join(os.homedir(), ".codex", "plugins", "cache"),
 ];
 
 function parseArgs(argv) {
@@ -97,7 +96,6 @@ function readRegistryNames(repoRoot) {
 
 function sourceKind(root) {
   const normalized = root.replaceAll("\\", "/").toLowerCase();
-  if (normalized.includes("/plugins/cache")) return "plugin-cache";
   if (normalized.includes("/.system")) return "system";
   if (normalized.includes("/.agents/skills")) return "agent-local";
   if (normalized.includes("/.codex/skills")) return "codex-local";
@@ -119,7 +117,6 @@ function scoreCandidate(item, existingNames) {
     "github",
     "local",
     "mcp",
-    "plugin",
     "publish",
     "registry",
     "repo",
@@ -144,7 +141,6 @@ function scoreCandidate(item, existingNames) {
   for (const keyword of risky) if (text.includes(keyword)) score -= 2;
   if (existingNames.has(item.name)) score -= 5;
   if (item.description.length > 40) score += 1;
-  if (item.source === "plugin-cache") score += 1;
   return score;
 }
 

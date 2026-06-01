@@ -29,7 +29,7 @@ node tools/validate-skills.mjs --strict-sections
 
 ## Local Capability Scan
 
-When improving the repository from an installed local skill or plugin set, start with the read-only scanner:
+When improving the repository from installed local skills, start with the read-only scanner:
 
 ```bash
 node tools/scan-local-capabilities.mjs --limit 20
@@ -50,7 +50,7 @@ python <skill-creator>/scripts/quick_validate.py skills/<skill-name>
 Before pushing or publishing:
 
 1. run `node tools/validate-skills.mjs`
-2. run `node tools/scan-local-capabilities.mjs --limit 20` when the change came from local skill or plugin harvesting
+2. run `node tools/scan-local-capabilities.mjs --limit 20` when the change came from local skill harvesting
 3. run `quick_validate.py` for changed skills
 4. run `git diff --check`
 5. review `git diff --stat`

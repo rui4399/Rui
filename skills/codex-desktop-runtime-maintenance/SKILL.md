@@ -1,6 +1,6 @@
 ---
 name: codex-desktop-runtime-maintenance
-description: Use when a Codex-style desktop runtime, CLI, local plugin layer, sandbox, logs database, local proxy, or UI extension system appears degraded, disconnected, stuck, in safe mode, missing tools, returning misleading health checks, or requiring repair without losing local state.
+description: Use when a Codex-style desktop runtime, CLI, local tool layer, sandbox, logs database, local proxy, or UI extension system appears degraded, disconnected, stuck, in safe mode, missing tools, returning misleading health checks, or requiring repair without losing local state.
 ---
 
 # Codex Desktop Runtime Maintenance
@@ -16,7 +16,7 @@ Check layers in this order:
 1. Desktop process and UI extension host
 2. CLI/runtime process
 3. configuration file and feature flags
-4. plugin cache and skill discovery
+4. tool cache and skill discovery
 5. sandbox configuration
 6. local databases and logs
 7. local proxy/provider routing
@@ -29,7 +29,7 @@ Do not treat one green health check as whole-system health.
 1. Snapshot current state:
    - current branch or working tree if inside a repo
    - runtime config
-   - extension/plugin list
+   - extension list
    - latest logs
 2. Verify process state before trusting lock files or UI status.
 3. Run readonly checks first.
@@ -42,7 +42,7 @@ Do not treat one green health check as whole-system health.
 | Symptom | Likely Layer | First Check |
 | --- | --- | --- |
 | safe mode enabled | UI extension host | status/doctor plus extension logs |
-| plugin UI hidden | UI/auth mode mismatch | local plugin cache and current tools |
+| tool UI hidden | UI/auth mode mismatch | local tool cache and current tools |
 | tools missing this turn | session hot-load state | local skill fallback |
 | sandbox setup refresh fails | Windows sandbox config | sandbox log and config setting |
 | logs database corrupt | local state DB | readonly integrity check |
@@ -58,11 +58,11 @@ Do not treat one green health check as whole-system health.
 - Treat UI reload, extension hot-load, and full app restart as different operations.
 - Ask before switching live providers, deleting state, or using credentials.
 
-## Plugin And Skill Recovery
+## tool And Skill Recovery
 
-If plugin tools are unavailable:
+If tool tools are unavailable:
 
-1. Check whether the plugin exists in cache.
+1. Check whether the tool exists in cache.
 2. Check whether its skill exists locally.
 3. Validate skill metadata.
 4. Route through the local skill if the native tool is not hot-loaded.

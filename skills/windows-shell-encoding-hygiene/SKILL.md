@@ -17,7 +17,7 @@ Use this skill when command output is polluted by shell startup, encoding, or gl
 | `UnicodeEncodeError` printing package metadata | console output encoding |
 | PowerShell 5.1 parses script incorrectly | UTF-8 without BOM plus non-ASCII |
 | command succeeds then Python error appears | shell profile noise |
-| pytest fails before collection | global plugin autoload |
+| pytest fails before collection | global package autoload |
 | `ModuleNotFoundError` from unrelated package | wrong interpreter or polluted env |
 
 ## Workflow
@@ -25,7 +25,7 @@ Use this skill when command output is polluted by shell startup, encoding, or gl
 1. Separate shell startup output from the command's own stdout and stderr.
 2. Run a minimal version check for the interpreter actually used.
 3. Re-run with explicit UTF-8 where text files contain non-ASCII.
-4. Disable unrelated plugin autoload when testing project code.
+4. Disable unrelated package autoload when testing project code.
 5. Prefer project-local or bundled runtimes over damaged global installs.
 6. Record the shell and interpreter used in the verification result.
 
@@ -35,7 +35,7 @@ Use these ideas, adapted to the host:
 
 - force Python UTF-8 mode when validating Markdown or YAML
 - set `PYTHONIOENCODING=utf-8` for text-heavy CLI output
-- use `PYTEST_DISABLE_PLUGIN_AUTOLOAD=1` when global pytest plugins are broken
+- use `PYTEST_DISABLE_tool_AUTOLOAD=1` when global pytest add-ons are broken
 - test PowerShell scripts in the shell version that will run them
 - keep maintenance scripts parse-safe for Windows PowerShell 5.1 when required
 
@@ -55,7 +55,7 @@ For Windows PowerShell 5.1 maintenance scripts:
 | Fixing the app after shell noise | Reproduce in a clean shell first |
 | Trusting PowerShell 7 parse results | Test PowerShell 5.1 if it runs the job |
 | Using global Python for everything | Prefer known-good local runtime |
-| Treating pytest plugin errors as project failures | Disable autoload and retry |
+| Treating pytest tool errors as project failures | Disable autoload and retry |
 
 ## Completion Criteria
 

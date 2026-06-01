@@ -1,6 +1,6 @@
 ---
 name: codex-config-drift-recovery
-description: Use when a Codex-style configuration appears thinned, rewritten, missing provider or plugin blocks, reset to authentication defaults, changed after a diagnostic command, or inconsistent with the runtime behavior users expect.
+description: Use when a Codex-style configuration appears thinned, rewritten, missing provider or MCP blocks, reset to authentication defaults, changed after a diagnostic command, or inconsistent with the runtime behavior users expect.
 ---
 
 # Codex Config Drift Recovery
@@ -12,7 +12,7 @@ Use this skill when local configuration may have drifted from the working baseli
 ## Drift Signals
 
 - provider routing disappears
-- plugin or MCP sections are missing
+- provider or MCP sections are missing
 - local feature flags reset
 - authentication requirement flips unexpectedly
 - sandbox mode changes without intent
@@ -35,7 +35,7 @@ Check for expected layers:
 
 - model and provider routing
 - feature flags
-- plugin discovery or dispatcher configuration
+- tool discovery or dispatcher configuration
 - MCP server definitions
 - memory or profile paths
 - Windows sandbox settings
@@ -48,7 +48,7 @@ A restored config is not verified by file presence alone. Verify through:
 
 - a runtime status command that does not mutate config
 - actual model request through the configured route
-- plugin or skill visibility in the current session
+- tool or skill visibility in the current session
 - MCP server list or a read-only MCP action
 - sandbox setup logs if sandbox behavior changed
 

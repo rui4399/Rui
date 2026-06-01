@@ -1,6 +1,6 @@
 # Codex Skill Lab
 
-This directory contains public Codex skill drafts distilled from local agent maintenance work. They focus on the messy layer where AI systems actually break: desktop runtimes, Windows/WSL boundaries, bridge state, media delivery, provider routers, OAuth sessions, plugin visibility, and the discipline of turning failures into reusable procedures.
+This directory contains public Codex skill drafts distilled from local agent maintenance work. They focus on the messy layer where AI systems actually break: desktop runtimes, Windows/WSL boundaries, bridge state, media delivery, provider routers, OAuth sessions, tool visibility, and the discipline of turning failures into reusable procedures.
 
 The collection is intentionally not a catalog of generic API wrappers. Each skill encodes a recurring operating pattern: what evidence to inspect, what false-positive signals to distrust, how to repair with the smallest blast radius, and what counts as done.
 
@@ -12,9 +12,8 @@ The collection is intentionally not a catalog of generic API wrappers. Each skil
 - `windows-ai-devtool-repair`: repair Windows AI development toolchains when Python, Node, PowerShell, WSL, or local proxies drift.
 - `windows-shell-encoding-hygiene`: separate real command failures from PowerShell, Python, pytest, and UTF-8/GBK environment noise.
 - `cross-runtime-path-resolution`: resolve executable and filesystem paths across Windows, WSL, Node, Python, PowerShell, desktop apps, and bridges.
-- `codex-desktop-runtime-maintenance`: maintain a Codex-style desktop runtime across CLI, sandbox, plugin, database, proxy, and UI extension layers.
-- `codex-config-drift-recovery`: recover thinned or rewritten local Codex configuration without damaging provider, plugin, MCP, memory, or sandbox blocks.
-- `codexplusplus-tweak-lifecycle`: diagnose Codex++ safe mode, tweak discovery, preload injection, renderer UI, and visible extension behavior.
+- `codex-desktop-runtime-maintenance`: maintain a Codex-style desktop runtime across CLI, sandbox, database, proxy, and UI layers.
+- `codex-config-drift-recovery`: recover thinned or rewritten local Codex configuration without damaging provider, MCP, memory, or sandbox blocks.
 
 ### Bridges, Messaging, And Media
 
@@ -33,13 +32,12 @@ The collection is intentionally not a catalog of generic API wrappers. Each skil
 - `mcp-oauth-session-freshness`: handle OAuth-backed MCP tools when CLI login succeeds but the active desktop session still has stale auth.
 - `codegraph-mcp-code-intelligence`: use CodeGraph CLI or MCP for local symbol search, impact analysis, affected-test discovery, and task-focused context packs.
 - `external-write-draft-fallback`: preserve local drafts and verify remote writes when OAuth, permissions, network, or content rules are uncertain.
-- `codex-plugin-recovery-api-mode`: recover local plugin/skill routing when a Codex-style app is running in API-key mode or the UI does not expose plugins.
 
 ### Memory, Portability, And Publication
 
 - `local-agent-memory-loop`: maintain explicit local memory files for agent preferences, lessons, active rules, and promotion.
 - `codex-identity-portability`: migrate local Codex identity assets without copying secrets or active account state.
-- `local-capability-harvest`: scan local skills and plugin caches, then curate public-safe repository improvements without dumping private state.
+- `local-capability-harvest`: scan local skills, then curate public-safe repository improvements without dumping private state.
 - `public-skill-distillation`: turn private logs, maintenance records, and agent conversations into public, reusable, sanitized skills.
 - `agent-publication-readiness-review`: review a public GitHub skill library for taxonomy, polish, validation, and sensitive-information exposure.
 - `token-frugal-skill-authoring`: create and revise Codex-compatible skills with compact triggers, progressive disclosure, validation, and low default context cost.

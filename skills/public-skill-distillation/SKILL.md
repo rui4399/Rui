@@ -1,6 +1,6 @@
 ---
 name: public-skill-distillation
-description: Use when turning private work logs, local maintenance records, agent conversations, plugin histories, or repeated debugging sessions into public GitHub skill drafts without leaking private state.
+description: Use when turning private work logs, local maintenance records, agent conversations, tool histories, or repeated debugging sessions into public GitHub skill drafts without leaking private state.
 ---
 
 # Public Skill Distillation

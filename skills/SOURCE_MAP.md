@@ -50,7 +50,7 @@ Distinctive angle:
 
 Inspired by:
 
-- scanning local skill roots and plugin caches before improving this repository
+- scanning local skill roots and tool caches before improving this repository
 - the need to choose useful public capabilities instead of publishing every installed local skill
 - repeated public-safety passes that remove private paths, account context, and raw logs
 
@@ -59,21 +59,6 @@ Distinctive angle:
 - treats local capability discovery as a curation workflow, not a copy operation
 - ranks candidates from metadata before reading full private sources
 - pairs a public skill with a read-only scanner that hides source paths by default
-
-## codex-plugin-recovery-api-mode
-
-Inspired by:
-
-- current-dialogue plugin routing skill
-- plugin cache and local skill fallback work
-- API-key mode UI/plugin visibility issues
-- config mutation incidents from diagnostics
-
-Distinctive angle:
-
-- aims at current-session recovery rather than generic plugin setup
-- uses local manifests and skills when native tools are not hot-loaded
-- includes config safety checks before diagnostics
 
 ## codex-identity-portability
 
@@ -110,14 +95,14 @@ Distinctive angle:
 Inspired by:
 
 - local Codex runtime repair work
-- Codex++ safe-mode and tweak-loading diagnostics
+- desktop extension layer safe-mode and tweak-loading diagnostics
 - sandbox setup refresh failures
 - corrupt logs database repair planning
 - local proxy and provider-health false positives
 
 Distinctive angle:
 
-- treats desktop runtime, CLI, plugins, sandbox, databases, MCP, and provider proxy as separate layers
+- treats desktop runtime, CLI, tools, sandbox, databases, MCP, and provider proxy as separate layers
 - distinguishes UI reload, hot-load, and full restart
 - emphasizes readonly checks and backups before mutation
 
@@ -196,7 +181,7 @@ Distinctive angle:
 
 Inspired by:
 
-- Codex memory files, local skills, plugin caches, session stores, media artifacts, auth stores, and shared records
+- Codex memory files, local skills, tool caches, session stores, media artifacts, auth stores, and shared records
 - account migration and non-secret record sharing work
 - bridge state and capability registry patterns
 
@@ -285,21 +270,21 @@ Inspired by:
 
 - PowerShell 5.1 misreading UTF-8 maintenance scripts
 - Python and pip Unicode failures in Windows consoles
-- pytest global plugin pollution
+- pytest global tool pollution
 - shell profile noise that appeared after successful commands
 
 Distinctive angle:
 
 - distinguishes shell failure from target command failure
 - makes encoding and interpreter choice part of verification
-- captures when project tests should isolate themselves from global plugins
+- captures when project tests should isolate themselves from global tools
 
 ## codex-config-drift-recovery
 
 Inspired by:
 
-- Codex config being reduced after diagnostic/plugin commands
-- provider, plugin, MCP, memory, and sandbox sections needing restoration
+- Codex config being reduced after diagnostic/tool commands
+- provider, tool, MCP, memory, and sandbox sections needing restoration
 - generated config blocks that should not be overwritten casually
 
 Distinctive angle:
@@ -308,14 +293,14 @@ Distinctive angle:
 - requires current snapshot and known-good baseline before repair
 - prefers non-mutating verification after restoration
 
-## codexplusplus-tweak-lifecycle
+## desktop-extension-tweak-lifecycle
 
 Inspired by:
 
-- Codex++ safe mode disabling local tweaks
+- desktop extension layer safe mode disabling local tweaks
 - renderer preload and settings injection compatibility failures
 - tweak discovery logs showing installed tweaks without visible UI behavior
-- local plugin/skills entry work for API-key mode
+- local tool/skills entry work for API-key mode
 
 Distinctive angle:
 
@@ -398,7 +383,7 @@ Distinctive angle:
 
 Inspired by:
 
-- turning local Codex/Hermes/Codex++ maintenance logs into public GitHub skills
+- turning local Codex/Hermes/desktop extension layer maintenance logs into public GitHub skills
 - repeated need to preserve methods while removing private state
 - user request for skills that reflect both work records and operating philosophy
 

@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "updated": "2026-06-01",
+  "updated": "2026-06-02",
   "skills": [
     {
       "name": "agent-publication-readiness-review",
@@ -8,11 +8,23 @@
       "author": "Rui Workbench",
       "path": "skills/agent-publication-readiness-review",
       "summary": "Review public skill libraries for taxonomy, validation, safety, and polish before publication.",
-      "triggers": ["public skill library", "publish skills", "readiness review"],
-      "tools": ["filesystem", "git", "ripgrep"],
+      "triggers": [
+        "public skill library",
+        "publish skills",
+        "readiness review"
+      ],
+      "tools": [
+        "filesystem",
+        "git",
+        "ripgrep"
+      ],
       "domain": "publication",
       "difficulty": "medium",
-      "tags": ["public-safety", "review", "skills"],
+      "tags": [
+        "public-safety",
+        "review",
+        "skills"
+      ],
       "status": "stable"
     },
     {
@@ -21,11 +33,23 @@
       "author": "Rui Workbench",
       "path": "skills/bridge-endpoint-liveness-triage",
       "summary": "Diagnose bridge endpoints that look healthy while queues, logs, or sessions stop moving.",
-      "triggers": ["bridge stuck", "endpoint idle", "queue not moving"],
-      "tools": ["filesystem", "powershell", "node"],
+      "triggers": [
+        "bridge stuck",
+        "endpoint idle",
+        "queue not moving"
+      ],
+      "tools": [
+        "filesystem",
+        "powershell",
+        "node"
+      ],
       "domain": "local-ops",
       "difficulty": "high",
-      "tags": ["bridge", "liveness", "diagnostics"],
+      "tags": [
+        "bridge",
+        "liveness",
+        "diagnostics"
+      ],
       "status": "stable"
     },
     {
@@ -34,11 +58,23 @@
       "author": "Rui Workbench",
       "path": "skills/capability-registry-maintenance",
       "summary": "Keep capability registries and health reports aligned with implemented features.",
-      "triggers": ["capability registry", "feature status", "health report"],
-      "tools": ["filesystem", "json", "ripgrep"],
+      "triggers": [
+        "capability registry",
+        "feature status",
+        "health report"
+      ],
+      "tools": [
+        "filesystem",
+        "json",
+        "ripgrep"
+      ],
       "domain": "agent-systems",
       "difficulty": "medium",
-      "tags": ["registry", "capabilities", "verification"],
+      "tags": [
+        "registry",
+        "capabilities",
+        "verification"
+      ],
       "status": "stable"
     },
     {
@@ -47,11 +83,23 @@
       "author": "Rui Workbench",
       "path": "skills/chat-empty-turn-recovery",
       "summary": "Recover turns where a system reports completion but no assistant message reaches the user.",
-      "triggers": ["empty turn", "no assistant reply", "silent completion"],
-      "tools": ["logs", "filesystem", "provider-probe"],
+      "triggers": [
+        "empty turn",
+        "no assistant reply",
+        "silent completion"
+      ],
+      "tools": [
+        "logs",
+        "filesystem",
+        "provider-probe"
+      ],
       "domain": "chat-runtime",
       "difficulty": "medium",
-      "tags": ["chat", "delivery", "recovery"],
+      "tags": [
+        "chat",
+        "delivery",
+        "recovery"
+      ],
       "status": "stable"
     },
     {
@@ -60,11 +108,23 @@
       "author": "Rui Workbench",
       "path": "skills/chat-media-delivery-runbook",
       "summary": "Debug media delivery by separating generation, upload, send, and final visibility.",
-      "triggers": ["media not sent", "image delivery", "file delivery"],
-      "tools": ["filesystem", "media-preview", "bridge"],
+      "triggers": [
+        "media not sent",
+        "image delivery",
+        "file delivery"
+      ],
+      "tools": [
+        "filesystem",
+        "media-preview",
+        "bridge"
+      ],
       "domain": "media",
       "difficulty": "high",
-      "tags": ["media", "delivery", "chat"],
+      "tags": [
+        "media",
+        "delivery",
+        "chat"
+      ],
       "status": "stable"
     },
     {
@@ -72,12 +132,24 @@
       "version": "0.1.0",
       "author": "Rui Workbench",
       "path": "skills/codex-config-drift-recovery",
-      "summary": "Recover local Codex configuration drift without damaging provider, plugin, MCP, memory, or sandbox blocks.",
-      "triggers": ["codex config drift", "rewritten config", "provider missing"],
-      "tools": ["filesystem", "powershell", "diff"],
+      "summary": "Recover local Codex configuration drift without damaging provider, MCP, memory, or sandbox blocks.",
+      "triggers": [
+        "codex config drift",
+        "rewritten config",
+        "provider missing"
+      ],
+      "tools": [
+        "filesystem",
+        "powershell",
+        "diff"
+      ],
       "domain": "codex",
       "difficulty": "high",
-      "tags": ["config", "codex", "recovery"],
+      "tags": [
+        "config",
+        "codex",
+        "recovery"
+      ],
       "status": "stable"
     },
     {
@@ -85,12 +157,25 @@
       "version": "0.1.0",
       "author": "Rui Workbench",
       "path": "skills/codex-desktop-runtime-maintenance",
-      "summary": "Maintain desktop runtime layers across CLI, sandbox, plugins, databases, proxy, and UI extensions.",
-      "triggers": ["codex desktop broken", "plugin missing", "runtime repair"],
-      "tools": ["filesystem", "powershell", "sqlite", "provider-probe"],
+      "summary": "Maintain desktop runtime layers across CLI, sandbox, databases, proxy, and UI surfaces.",
+      "triggers": [
+        "codex desktop broken",
+        "tool missing",
+        "runtime repair"
+      ],
+      "tools": [
+        "filesystem",
+        "powershell",
+        "sqlite",
+        "provider-probe"
+      ],
       "domain": "codex",
       "difficulty": "advanced",
-      "tags": ["desktop", "runtime", "maintenance"],
+      "tags": [
+        "desktop",
+        "runtime",
+        "maintenance"
+      ],
       "status": "stable"
     },
     {
@@ -99,37 +184,23 @@
       "author": "Rui Workbench",
       "path": "skills/codex-identity-portability",
       "summary": "Migrate non-secret local Codex identity assets without copying credentials or account state.",
-      "triggers": ["codex migration", "identity portability", "shared records"],
-      "tools": ["filesystem", "archive", "diff"],
+      "triggers": [
+        "codex migration",
+        "identity portability",
+        "shared records"
+      ],
+      "tools": [
+        "filesystem",
+        "archive",
+        "diff"
+      ],
       "domain": "portability",
       "difficulty": "high",
-      "tags": ["migration", "identity", "privacy"],
-      "status": "stable"
-    },
-    {
-      "name": "codex-plugin-recovery-api-mode",
-      "version": "0.1.0",
-      "author": "Rui Workbench",
-      "path": "skills/codex-plugin-recovery-api-mode",
-      "summary": "Recover plugin and skill routing when a Codex-style app runs in API-key mode or does not hot-load plugins.",
-      "triggers": ["plugin not visible", "api mode", "skill routing"],
-      "tools": ["filesystem", "config", "ripgrep"],
-      "domain": "codex",
-      "difficulty": "high",
-      "tags": ["plugins", "skills", "api-mode"],
-      "status": "stable"
-    },
-    {
-      "name": "codexplusplus-tweak-lifecycle",
-      "version": "0.1.0",
-      "author": "Rui Workbench",
-      "path": "skills/codexplusplus-tweak-lifecycle",
-      "summary": "Diagnose tweak discovery, safe mode, preload injection, and visible extension behavior.",
-      "triggers": ["codex++", "safe mode", "tweak not loading"],
-      "tools": ["filesystem", "powershell", "logs"],
-      "domain": "codex",
-      "difficulty": "high",
-      "tags": ["codexplusplus", "tweaks", "ui"],
+      "tags": [
+        "migration",
+        "identity",
+        "privacy"
+      ],
       "status": "stable"
     },
     {
@@ -138,11 +209,26 @@
       "author": "Rui Workbench",
       "path": "skills/codegraph-mcp-code-intelligence",
       "summary": "Use local CodeGraph CLI or MCP for symbol search, impact analysis, affected-test discovery, and task-focused context packs before editing.",
-      "triggers": ["codegraph", "symbol search", "impact analysis", "affected tests"],
-      "tools": ["codegraph", "mcp", "filesystem", "git"],
+      "triggers": [
+        "codegraph",
+        "symbol search",
+        "impact analysis",
+        "affected tests"
+      ],
+      "tools": [
+        "codegraph",
+        "mcp",
+        "filesystem",
+        "git"
+      ],
       "domain": "code-intelligence",
       "difficulty": "medium",
-      "tags": ["codegraph", "mcp", "code-intelligence", "repo-triage"],
+      "tags": [
+        "codegraph",
+        "mcp",
+        "code-intelligence",
+        "repo-triage"
+      ],
       "status": "stable"
     },
     {
@@ -151,11 +237,24 @@
       "author": "Rui Workbench",
       "path": "skills/cross-runtime-path-resolution",
       "summary": "Resolve executable and filesystem paths across Windows, WSL, Node, Python, PowerShell, desktop apps, and bridges.",
-      "triggers": ["path mismatch", "windows wsl path", "executable not found"],
-      "tools": ["powershell", "wsl", "node", "python"],
+      "triggers": [
+        "path mismatch",
+        "windows wsl path",
+        "executable not found"
+      ],
+      "tools": [
+        "powershell",
+        "wsl",
+        "node",
+        "python"
+      ],
       "domain": "interop",
       "difficulty": "medium",
-      "tags": ["paths", "windows", "wsl"],
+      "tags": [
+        "paths",
+        "windows",
+        "wsl"
+      ],
       "status": "stable"
     },
     {
@@ -164,11 +263,24 @@
       "author": "Rui Workbench",
       "path": "skills/evidence-first-local-ops",
       "summary": "Debug local systems by ranking logs, process state, probes, config, UI status, and prior assumptions as evidence.",
-      "triggers": ["debug local system", "evidence first", "false positive health"],
-      "tools": ["logs", "filesystem", "process-list", "ports"],
+      "triggers": [
+        "debug local system",
+        "evidence first",
+        "false positive health"
+      ],
+      "tools": [
+        "logs",
+        "filesystem",
+        "process-list",
+        "ports"
+      ],
       "domain": "methodology",
       "difficulty": "medium",
-      "tags": ["debugging", "evidence", "operations"],
+      "tags": [
+        "debugging",
+        "evidence",
+        "operations"
+      ],
       "status": "stable"
     },
     {
@@ -177,11 +289,23 @@
       "author": "Rui Workbench",
       "path": "skills/external-write-draft-fallback",
       "summary": "Preserve local drafts and verify remote writes when OAuth, permissions, network, or content rules are uncertain.",
-      "triggers": ["external write failed", "oauth stale", "save local draft"],
-      "tools": ["filesystem", "mcp", "browser"],
+      "triggers": [
+        "external write failed",
+        "oauth stale",
+        "save local draft"
+      ],
+      "tools": [
+        "filesystem",
+        "mcp",
+        "browser"
+      ],
       "domain": "external-writes",
       "difficulty": "medium",
-      "tags": ["drafts", "oauth", "verification"],
+      "tags": [
+        "drafts",
+        "oauth",
+        "verification"
+      ],
       "status": "stable"
     },
     {
@@ -190,11 +314,23 @@
       "author": "Rui Workbench",
       "path": "skills/failure-to-runbook-loop",
       "summary": "Convert repeated failures into memory entries, scripts, runbooks, or skills with explicit verification.",
-      "triggers": ["write runbook", "recurring failure", "turn failure into skill"],
-      "tools": ["filesystem", "git", "logs"],
+      "triggers": [
+        "write runbook",
+        "recurring failure",
+        "turn failure into skill"
+      ],
+      "tools": [
+        "filesystem",
+        "git",
+        "logs"
+      ],
       "domain": "process",
       "difficulty": "medium",
-      "tags": ["runbooks", "memory", "learning"],
+      "tags": [
+        "runbooks",
+        "memory",
+        "learning"
+      ],
       "status": "stable"
     },
     {
@@ -203,11 +339,24 @@
       "author": "Rui Workbench",
       "path": "skills/hermes-gateway-recovery",
       "summary": "Recover Hermes-style WSL gateways, bot connectors, fallback providers, proxy bridges, and stale sessions.",
-      "triggers": ["hermes gateway", "wsl gateway", "empty gateway response"],
-      "tools": ["wsl", "powershell", "logs", "provider-probe"],
+      "triggers": [
+        "hermes gateway",
+        "wsl gateway",
+        "empty gateway response"
+      ],
+      "tools": [
+        "wsl",
+        "powershell",
+        "logs",
+        "provider-probe"
+      ],
       "domain": "interop",
       "difficulty": "advanced",
-      "tags": ["hermes", "wsl", "gateway"],
+      "tags": [
+        "hermes",
+        "wsl",
+        "gateway"
+      ],
       "status": "stable"
     },
     {
@@ -216,11 +365,23 @@
       "author": "Rui Workbench",
       "path": "skills/local-agent-memory-loop",
       "summary": "Maintain explicit local memory files for agent preferences, lessons, active rules, and promotion.",
-      "triggers": ["agent memory", "log learning", "promote rule"],
-      "tools": ["filesystem", "markdown", "git"],
+      "triggers": [
+        "agent memory",
+        "log learning",
+        "promote rule"
+      ],
+      "tools": [
+        "filesystem",
+        "markdown",
+        "git"
+      ],
       "domain": "memory",
       "difficulty": "medium",
-      "tags": ["memory", "preferences", "learning"],
+      "tags": [
+        "memory",
+        "preferences",
+        "learning"
+      ],
       "status": "stable"
     },
     {
@@ -228,12 +389,25 @@
       "version": "0.1.0",
       "author": "Rui Workbench",
       "path": "skills/local-capability-harvest",
-      "summary": "Scan local skills and plugin caches to select public-safe repository improvements without bulk-publishing private state.",
-      "triggers": ["scan local skills", "plugin cache harvest", "public-safe capability curation"],
-      "tools": ["filesystem", "node", "ripgrep", "git"],
+      "summary": "Scan local skills to select public-safe repository improvements without bulk-publishing private state.",
+      "triggers": [
+        "scan local skills",
+        "local capability harvest",
+        "public-safe capability curation"
+      ],
+      "tools": [
+        "filesystem",
+        "node",
+        "ripgrep",
+        "git"
+      ],
       "domain": "skill-authoring",
       "difficulty": "medium",
-      "tags": ["skills", "plugins", "curation", "sanitization"],
+      "tags": [
+        "skills",
+        "curation",
+        "sanitization"
+      ],
       "status": "stable"
     },
     {
@@ -242,11 +416,23 @@
       "author": "Rui Workbench",
       "path": "skills/local-model-routing-evaluation",
       "summary": "Evaluate local router models by task-shaped probes, output shape, fallback behavior, and failure category.",
-      "triggers": ["model routing", "provider evaluation", "fallback model"],
-      "tools": ["provider-probe", "json", "logs"],
+      "triggers": [
+        "model routing",
+        "provider evaluation",
+        "fallback model"
+      ],
+      "tools": [
+        "provider-probe",
+        "json",
+        "logs"
+      ],
       "domain": "model-routing",
       "difficulty": "high",
-      "tags": ["models", "routing", "evals"],
+      "tags": [
+        "models",
+        "routing",
+        "evals"
+      ],
       "status": "stable"
     },
     {
@@ -255,11 +441,23 @@
       "author": "Rui Workbench",
       "path": "skills/mcp-oauth-session-freshness",
       "summary": "Handle OAuth-backed MCP tools when CLI login succeeds but the active desktop session still has stale auth.",
-      "triggers": ["mcp auth required", "oauth stale", "desktop session auth"],
-      "tools": ["mcp", "filesystem", "browser"],
+      "triggers": [
+        "mcp auth required",
+        "oauth stale",
+        "desktop session auth"
+      ],
+      "tools": [
+        "mcp",
+        "filesystem",
+        "browser"
+      ],
       "domain": "mcp",
       "difficulty": "medium",
-      "tags": ["oauth", "mcp", "session"],
+      "tags": [
+        "oauth",
+        "mcp",
+        "session"
+      ],
       "status": "stable"
     },
     {
@@ -268,11 +466,23 @@
       "author": "Rui Workbench",
       "path": "skills/media-artifact-integrity-check",
       "summary": "Verify generated or cached media before reuse when filenames, fallbacks, or prior send logs are weak evidence.",
-      "triggers": ["verify media", "wrong image", "cached artifact"],
-      "tools": ["filesystem", "image-preview", "metadata"],
+      "triggers": [
+        "verify media",
+        "wrong image",
+        "cached artifact"
+      ],
+      "tools": [
+        "filesystem",
+        "image-preview",
+        "metadata"
+      ],
       "domain": "media",
       "difficulty": "medium",
-      "tags": ["media", "integrity", "qa"],
+      "tags": [
+        "media",
+        "integrity",
+        "qa"
+      ],
       "status": "stable"
     },
     {
@@ -281,11 +491,23 @@
       "author": "Rui Workbench",
       "path": "skills/mobile-agent-session-bridge",
       "summary": "Diagnose mobile or web control surfaces connected to local coding agents when sessions are online but turns stall.",
-      "triggers": ["mobile agent stuck", "session bridge", "turn no final"],
-      "tools": ["logs", "websocket", "filesystem"],
+      "triggers": [
+        "mobile agent stuck",
+        "session bridge",
+        "turn no final"
+      ],
+      "tools": [
+        "logs",
+        "websocket",
+        "filesystem"
+      ],
       "domain": "mobile-bridge",
       "difficulty": "high",
-      "tags": ["mobile", "bridge", "sessions"],
+      "tags": [
+        "mobile",
+        "bridge",
+        "sessions"
+      ],
       "status": "stable"
     },
     {
@@ -294,11 +516,23 @@
       "author": "Rui Workbench",
       "path": "skills/provider-response-shape-probing",
       "summary": "Classify provider health by usable JSON and output shape instead of status codes, labels, or generic probes.",
-      "triggers": ["provider health", "html response", "response shape"],
-      "tools": ["http", "json", "logs"],
+      "triggers": [
+        "provider health",
+        "html response",
+        "response shape"
+      ],
+      "tools": [
+        "http",
+        "json",
+        "logs"
+      ],
       "domain": "providers",
       "difficulty": "medium",
-      "tags": ["providers", "json", "health"],
+      "tags": [
+        "providers",
+        "json",
+        "health"
+      ],
       "status": "stable"
     },
     {
@@ -307,11 +541,23 @@
       "author": "Rui Workbench",
       "path": "skills/public-skill-distillation",
       "summary": "Turn private logs, maintenance records, and conversations into public, reusable, sanitized skill drafts.",
-      "triggers": ["distill skill", "sanitize logs", "public skill"],
-      "tools": ["filesystem", "ripgrep", "git"],
+      "triggers": [
+        "distill skill",
+        "sanitize logs",
+        "public skill"
+      ],
+      "tools": [
+        "filesystem",
+        "ripgrep",
+        "git"
+      ],
       "domain": "publication",
       "difficulty": "medium",
-      "tags": ["skills", "sanitization", "publication"],
+      "tags": [
+        "skills",
+        "sanitization",
+        "publication"
+      ],
       "status": "stable"
     },
     {
@@ -320,11 +566,23 @@
       "author": "Rui Workbench",
       "path": "skills/state-layered-agent-design",
       "summary": "Design agent systems with separate memory, sessions, runtime, tools, credentials, artifacts, and external state layers.",
-      "triggers": ["agent architecture", "state layers", "separate credentials"],
-      "tools": ["architecture", "markdown", "filesystem"],
+      "triggers": [
+        "agent architecture",
+        "state layers",
+        "separate credentials"
+      ],
+      "tools": [
+        "architecture",
+        "markdown",
+        "filesystem"
+      ],
       "domain": "agent-systems",
       "difficulty": "medium",
-      "tags": ["architecture", "state", "agents"],
+      "tags": [
+        "architecture",
+        "state",
+        "agents"
+      ],
       "status": "stable"
     },
     {
@@ -333,11 +591,27 @@
       "author": "Rui Workbench",
       "path": "skills/token-frugal-skill-authoring",
       "summary": "Create or revise Codex-compatible skills so repeated work becomes concise, triggerable, validator-safe, and progressively disclosed.",
-      "triggers": ["write skill", "skill authoring", "reduce token use", "progressive disclosure"],
-      "tools": ["filesystem", "ripgrep", "python", "node", "git"],
+      "triggers": [
+        "write skill",
+        "skill authoring",
+        "reduce token use",
+        "progressive disclosure"
+      ],
+      "tools": [
+        "filesystem",
+        "ripgrep",
+        "python",
+        "node",
+        "git"
+      ],
       "domain": "skill-authoring",
       "difficulty": "medium",
-      "tags": ["skills", "tokens", "authoring", "validation"],
+      "tags": [
+        "skills",
+        "tokens",
+        "authoring",
+        "validation"
+      ],
       "status": "stable"
     },
     {
@@ -346,11 +620,26 @@
       "author": "Rui Workbench",
       "path": "skills/decision-record-architecture",
       "summary": "Maintain lightweight decision records with rationale, options, status, indexes, and supersession chains.",
-      "triggers": ["decision record", "log decision", "rationale capture", "supersede decision"],
-      "tools": ["filesystem", "markdown", "git", "yaml"],
+      "triggers": [
+        "decision record",
+        "log decision",
+        "rationale capture",
+        "supersede decision"
+      ],
+      "tools": [
+        "filesystem",
+        "markdown",
+        "git",
+        "yaml"
+      ],
       "domain": "knowledge-management",
       "difficulty": "medium",
-      "tags": ["decisions", "architecture", "rationale", "records"],
+      "tags": [
+        "decisions",
+        "architecture",
+        "rationale",
+        "records"
+      ],
       "status": "stable"
     },
     {
@@ -359,11 +648,28 @@
       "author": "Rui Workbench",
       "path": "skills/agent-efficiency-audit",
       "summary": "Audit agent workflows, skills, prompts, and docs for token cost, response-time risk, compatibility risk, and validation gaps.",
-      "triggers": ["efficiency audit", "reduce tokens", "response-time risk", "validation gap"],
-      "tools": ["filesystem", "ripgrep", "python", "node", "git", "codegraph"],
+      "triggers": [
+        "efficiency audit",
+        "reduce tokens",
+        "response-time risk",
+        "validation gap"
+      ],
+      "tools": [
+        "filesystem",
+        "ripgrep",
+        "python",
+        "node",
+        "git",
+        "codegraph"
+      ],
       "domain": "agent-systems",
       "difficulty": "medium",
-      "tags": ["efficiency", "tokens", "audit", "validation"],
+      "tags": [
+        "efficiency",
+        "tokens",
+        "audit",
+        "validation"
+      ],
       "status": "stable"
     },
     {
@@ -372,11 +678,28 @@
       "author": "Rui Workbench",
       "path": "skills/web-game-ui-bugfix-playbook",
       "summary": "Reproduce and repair browser-game UI, canvas, sprite, animation, viewport, input, and mobile WebView defects.",
-      "triggers": ["browser game bug", "canvas blank", "sprite qa", "mobile webview ui"],
-      "tools": ["filesystem", "browser", "python", "node", "android"],
+      "triggers": [
+        "browser game bug",
+        "canvas blank",
+        "sprite qa",
+        "mobile webview ui"
+      ],
+      "tools": [
+        "filesystem",
+        "browser",
+        "python",
+        "node",
+        "android"
+      ],
       "domain": "web-game-qa",
       "difficulty": "high",
-      "tags": ["game", "ui", "canvas", "sprites", "mobile"],
+      "tags": [
+        "game",
+        "ui",
+        "canvas",
+        "sprites",
+        "mobile"
+      ],
       "status": "stable"
     },
     {
@@ -385,11 +708,24 @@
       "author": "Rui Workbench",
       "path": "skills/windows-agent-interop-health",
       "summary": "Diagnose Windows, WSL, and local agent boundary failures with executable health checks.",
-      "triggers": ["windows wsl interop", "agent boundary", "wsl false negative"],
-      "tools": ["powershell", "wsl", "process-list", "ports"],
+      "triggers": [
+        "windows wsl interop",
+        "agent boundary",
+        "wsl false negative"
+      ],
+      "tools": [
+        "powershell",
+        "wsl",
+        "process-list",
+        "ports"
+      ],
       "domain": "interop",
       "difficulty": "high",
-      "tags": ["windows", "wsl", "health"],
+      "tags": [
+        "windows",
+        "wsl",
+        "health"
+      ],
       "status": "stable"
     },
     {
@@ -398,11 +734,24 @@
       "author": "Rui Workbench",
       "path": "skills/windows-ai-devtool-repair",
       "summary": "Repair Windows AI development toolchains when Python, Node, PowerShell, WSL, or local proxies drift.",
-      "triggers": ["windows devtool broken", "python node repair", "local proxy broken"],
-      "tools": ["powershell", "python", "node", "wsl"],
+      "triggers": [
+        "windows devtool broken",
+        "python node repair",
+        "local proxy broken"
+      ],
+      "tools": [
+        "powershell",
+        "python",
+        "node",
+        "wsl"
+      ],
       "domain": "toolchains",
       "difficulty": "high",
-      "tags": ["windows", "toolchain", "repair"],
+      "tags": [
+        "windows",
+        "toolchain",
+        "repair"
+      ],
       "status": "stable"
     },
     {
@@ -411,11 +760,23 @@
       "author": "Rui Workbench",
       "path": "skills/windows-shell-encoding-hygiene",
       "summary": "Separate real command failures from PowerShell, Python, pytest, and UTF-8 or GBK environment noise.",
-      "triggers": ["encoding error", "powershell utf8", "gbk noise"],
-      "tools": ["powershell", "python", "pytest"],
+      "triggers": [
+        "encoding error",
+        "powershell utf8",
+        "gbk noise"
+      ],
+      "tools": [
+        "powershell",
+        "python",
+        "pytest"
+      ],
       "domain": "toolchains",
       "difficulty": "medium",
-      "tags": ["encoding", "powershell", "windows"],
+      "tags": [
+        "encoding",
+        "powershell",
+        "windows"
+      ],
       "status": "stable"
     },
     {
@@ -424,11 +785,23 @@
       "author": "Rui Workbench",
       "path": "skills/theorem-prover",
       "summary": "Roadmap skill for proof planning, lemma decomposition, and correctness checks.",
-      "triggers": ["prove theorem", "lemma decomposition", "proof check"],
-      "tools": ["latex", "python", "symbolic-math"],
+      "triggers": [
+        "prove theorem",
+        "lemma decomposition",
+        "proof check"
+      ],
+      "tools": [
+        "latex",
+        "python",
+        "symbolic-math"
+      ],
       "domain": "math-research",
       "difficulty": "advanced",
-      "tags": ["math", "proofs", "roadmap"],
+      "tags": [
+        "math",
+        "proofs",
+        "roadmap"
+      ],
       "status": "roadmap"
     },
     {
@@ -437,11 +810,23 @@
       "author": "Rui Workbench",
       "path": "skills/asymptotic-analyzer",
       "summary": "Roadmap skill for limits, rates, complexity, recurrences, and generating-function analysis.",
-      "triggers": ["asymptotic analysis", "recurrence", "generating function"],
-      "tools": ["python", "symbolic-math", "latex"],
+      "triggers": [
+        "asymptotic analysis",
+        "recurrence",
+        "generating function"
+      ],
+      "tools": [
+        "python",
+        "symbolic-math",
+        "latex"
+      ],
       "domain": "math-research",
       "difficulty": "advanced",
-      "tags": ["math", "asymptotics", "roadmap"],
+      "tags": [
+        "math",
+        "asymptotics",
+        "roadmap"
+      ],
       "status": "roadmap"
     },
     {
@@ -450,11 +835,23 @@
       "author": "Rui Workbench",
       "path": "skills/polynomial-engine",
       "summary": "Roadmap skill for modular tests, Eisenstein shifts, factorization, and Galois-oriented checks.",
-      "triggers": ["polynomial factorization", "eisenstein", "galois check"],
-      "tools": ["python", "symbolic-math", "latex"],
+      "triggers": [
+        "polynomial factorization",
+        "eisenstein",
+        "galois check"
+      ],
+      "tools": [
+        "python",
+        "symbolic-math",
+        "latex"
+      ],
       "domain": "math-research",
       "difficulty": "advanced",
-      "tags": ["math", "polynomials", "roadmap"],
+      "tags": [
+        "math",
+        "polynomials",
+        "roadmap"
+      ],
       "status": "roadmap"
     },
     {
@@ -463,11 +860,23 @@
       "author": "Rui Workbench",
       "path": "skills/latex-polisher",
       "summary": "Roadmap skill for notation-preserving paper and proof cleanup.",
-      "triggers": ["polish latex", "proof cleanup", "paper notation"],
-      "tools": ["latex", "markdown", "citation-check"],
+      "triggers": [
+        "polish latex",
+        "proof cleanup",
+        "paper notation"
+      ],
+      "tools": [
+        "latex",
+        "markdown",
+        "citation-check"
+      ],
       "domain": "writing",
       "difficulty": "high",
-      "tags": ["latex", "writing", "roadmap"],
+      "tags": [
+        "latex",
+        "writing",
+        "roadmap"
+      ],
       "status": "roadmap"
     },
     {
@@ -476,11 +885,23 @@
       "author": "Rui Workbench",
       "path": "skills/mcm-paper-writer",
       "summary": "Roadmap skill for modeling-paper assumptions, methods, sensitivity analysis, and appendices.",
-      "triggers": ["mcm paper", "modeling paper", "sensitivity analysis"],
-      "tools": ["python", "latex", "plots"],
+      "triggers": [
+        "mcm paper",
+        "modeling paper",
+        "sensitivity analysis"
+      ],
+      "tools": [
+        "python",
+        "latex",
+        "plots"
+      ],
       "domain": "writing",
       "difficulty": "high",
-      "tags": ["mcm", "paper", "roadmap"],
+      "tags": [
+        "mcm",
+        "paper",
+        "roadmap"
+      ],
       "status": "roadmap"
     }
   ]

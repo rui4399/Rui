@@ -72,7 +72,7 @@ Probe with the exact API surface the agent uses and validate response shape, not
 | WSL says no distro | Resolve `Sysnative\wsl.exe` and compare from a normal terminal |
 | Bridge lock exists | Verify owning process and endpoint freshness |
 | Upload succeeded but user saw nothing | Check final send stage, not only CDN/upload logs |
-| Plugin unavailable | Check current session tools and local manifests before restarting |
+| Tool unavailable | Check current session tools and local tool manifests before restarting |
 | Proxy is healthy | Probe the actual endpoint and parse JSON shape |
 
 ## Completion Criteria

@@ -1,6 +1,6 @@
 ---
 name: state-layered-agent-design
-description: Use when designing, refactoring, or repairing an AI agent workflow that mixes memory, sessions, provider config, local tools, media transport, UI plugins, automations, or external service state and needs durable boundaries between layers.
+description: Use when designing, refactoring, or repairing an AI agent workflow that mixes memory, sessions, provider config, local tools, media transport, UI tools, automations, or external service state and needs durable boundaries between layers.
 ---
 
 # State-Layered Agent Design
@@ -18,7 +18,7 @@ Keep these separate:
 - active rules: concise always-on guidance
 - session: current conversation, transient context, token load
 - runtime: processes, ports, endpoint files, locks
-- tools: skills, plugins, MCP servers, caches
+- tools: skills, MCP servers, local tools, caches
 - credentials: auth files, API keys, cookies, OAuth tokens
 - artifacts: generated files, reports, media, drafts
 - external state: remote pages, deployments, paid jobs, sent messages

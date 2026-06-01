@@ -1,6 +1,6 @@
 ---
 name: codex-identity-portability
-description: Use when exporting, importing, cloning, backing up, or sharing a local Codex-style assistant setup across Windows accounts or machines while preserving memories, skills, plugins, generated artifacts, records, and configuration without copying secrets.
+description: Use when exporting, importing, cloning, backing up, or sharing a local Codex-style assistant setup across Windows accounts or machines while preserving memories, skills, tools, generated artifacts, records, and configuration without copying secrets.
 ---
 
 # Codex Identity Portability
@@ -15,7 +15,7 @@ Portable by default:
 
 - memories and preference files
 - local skills and skill metadata
-- non-secret plugin manifests
+- non-secret tool manifests
 - generated images or artifacts
 - automation definitions
 - session indexes and history summaries
